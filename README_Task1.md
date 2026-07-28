@@ -208,3 +208,128 @@ echo $?
 
 ## 📌 man:
 
+### 🔷 Example: manual pages
+
+```bash
+man ls
+man chmod
+man 5 passwd        
+man 1 passwd
+```
+
+### 📸 output
+
+<img width="1658" height="183" alt="man" src="https://github.com/user-attachments/assets/2a3eac90-462f-4317-9e12-d239f7e4e776" />
+
+## 📌--help:
+
+ Faster than man when you just need to recall a flag.
+
+ ### 🔷 Example:
+
+ ```bash
+ls --help
+ls --help | head -20
+cp --help | grep -A2 recursive
+```
+
+### 📸 output
+
+<img width="792" height="709" alt="ls" src="https://github.com/user-attachments/assets/12501726-667c-46e4-b3fa-4e350079387f" />
+
+<img width="1649" height="363" alt="ls2" src="https://github.com/user-attachments/assets/c32463b2-c1da-4742-a447-c7645378c0a2" />
+
+<img width="1658" height="157" alt="cp" src="https://github.com/user-attachments/assets/7f14cbc0-5d29-4fa4-b20c-957908ce64ce" />
+
+## 📌Search by Keyword:
+
+Use it when you know what you want to do, but don't know the command name.
+
+ ### 🔷 Example 1:
+
+ ```bash
+apropos "list directory"
+man -k "list directory"
+```
+
+Searches the descriptions of all manual pages for matching keywords.
+
+### 📸 output
+
+<img width="1656" height="406" alt="directory" src="https://github.com/user-attachments/assets/91a31756-9ccb-4e53-9cbf-204ef341d1f1" />
+
+ ### 🔷 Example 2:
+
+ ```bash
+apropos -s 8 network
+```
+
+Limits the keyword search strictly to Section 8 
+
+### 📸 output
+
+<img width="1653" height="653" alt="network" src="https://github.com/user-attachments/assets/6c82a91d-8f2b-4a1d-970e-2dd35761f8ae" />
+
+ ### 🔷 Example 3:
+
+ ```bash
+sudo mandb
+```
+
+it rebuilds the database index used for searches.
+
+### 📸 output
+
+<img width="689" height="725" alt="sudo" src="https://github.com/user-attachments/assets/146ccacb-3029-432e-a40a-ca0c7fe0f0cc" />
+
+
+## 📌Quick One-Line Summary:
+
+you know the command name, but want a quick TL;DR without opening the full manual page.
+
+### 🔷 Example 1:
+
+```bash
+whatis ls
+```
+
+Displays a single line explaining what ls does
+
+### 📸 output
+
+<img width="1648" height="144" alt="what  is" src="https://github.com/user-attachments/assets/517710cf-866d-40a1-b357-d7fac10ad002" />
+
+ ### 🔷 Example 2:
+
+```bash
+whatis passwd
+```
+
+Shows short summaries for all matching sections
+
+### 📸 output
+
+<img width="1383" height="351" alt="what is passwd" src="https://github.com/user-attachments/assets/eeefc97c-4d47-4379-b053-a52a42a02ccf" />
+
+## 📌 Deeper Documentation:
+
+GNU utilities often have much more detailed hypertext documentation in info than in standard man pages.
+
+### 🔷 Example :
+
+```bash
+info coreutils 'ls invocation'
+info bash
+```
+
+### 📸 output
+
+<img width="1380" height="799" alt="4" src="https://github.com/user-attachments/assets/c0788873-4522-4ad5-8b5e-760139ba3847" />
+
+<img width="806" height="797" alt="info" src="https://github.com/user-attachments/assets/d735aa47-ef3b-494e-81ea-9fb8dffe496f" />
+
+## 📌Command Inspection:
+
+
+
+
